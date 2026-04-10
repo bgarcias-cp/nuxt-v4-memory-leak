@@ -24,7 +24,7 @@
             const result: T[] = []
             for (let i = 0; i < times; i++) {
             // structuredClone guarantees new objects (no shared refs)
-                result.push(...(Array.from(arr)))
+                result.push(...structuredClone(arr))
             }
             return result
         }
