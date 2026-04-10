@@ -26,20 +26,11 @@ export default defineNuxtConfig({
         },
     },
   vite: {
-        plugins: [],
-        css: {
-            preprocessorOptions: {
-                scss: {
-                    api: 'modern-compiler',
-                    quietDeps: true,
-                    additionalData: '@use "~/assets/style/global.scss" as *;',
-                },
-            },
-        },
-        optimizeDeps: {
-            exclude: ['#imports'],
-        },
+    plugins: [],
+    optimizeDeps: {
+      exclude: ['#imports'],
     },
+  },
   vue: {
         compilerOptions: {
             whitespace: 'preserve',
