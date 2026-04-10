@@ -30,7 +30,7 @@
         }
 
         return {
-            posts: amplify(posts),
+            posts: posts,
             comments: amplify(comments),
             albums: amplify(albums),
             photos: amplify(photos, 20),
@@ -42,6 +42,5 @@
 
 
 <template>
-    <h1>Hello World</h1>
-    <p>{{ data?.albums.length }}</p>
+    <p>{{ data?.posts.length }}</p>
 </template>
